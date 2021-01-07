@@ -1,5 +1,6 @@
 package com.telran.tests;
 
+import com.telran.model.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,10 +11,11 @@ public class RegistrationTest extends TestBase {
     public void registrationTest(){
 
         app.getUser().openLogRegForm();
-        String email= "Mon"+System.currentTimeMillis()+"@mail.com";
-        String password="Mon12$"+System.currentTimeMillis();
+        int i = (int) ((System.currentTimeMillis()/1000)/3600);
+        String email= "Mon"+i+"@mail.com";
+        String password="Mon12$"+i;
         System.out.println(email + " " + password);
-        app.getUser().fillRegLogForm(email, "Test12345$");
+        app.getUser().fillRegLogForm(new User().withEmail(email).withPassword(password));
         app.getUser().clickRegButton();
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//*[text()='Sign Out']")));
 

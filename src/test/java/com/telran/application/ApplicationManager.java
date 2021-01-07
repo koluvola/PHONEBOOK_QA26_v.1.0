@@ -9,6 +9,11 @@ public class ApplicationManager {
 
     WebDriver wd;
     UserHelper user;
+    ContactHelper contact;
+
+    public ContactHelper getContact() {
+        return contact;
+    }
 
     public UserHelper getUser() {
         return user;
@@ -20,6 +25,7 @@ public class ApplicationManager {
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user= new UserHelper(wd);
+        contact =new ContactHelper(wd);
     }
 
     public  void stop() {

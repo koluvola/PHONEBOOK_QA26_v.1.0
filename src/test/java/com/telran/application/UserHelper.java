@@ -1,6 +1,6 @@
 package com.telran.application;
 
-import com.telran.application.HelperBase;
+import com.telran.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,12 +16,27 @@ public class UserHelper extends HelperBase {
         click(By.cssSelector("[href='/login']"));
     }
 
-    public void fillRegLogForm(String email, String password){
-        type(By.xpath("//input[1]"),email);
-        type(By.xpath("//input[2]"),password);
+    public void fillRegLogForm(User user){
+        type(By.xpath("//input[1]"), user.getEmail());
+        type(By.xpath("//input[2]"), user.getPassword());
 
     }
     public void clickRegButton(){
         click(By.xpath("//*[text()=' Registration']"));
+    }
+
+    public void clickLoginButton() {
+        click(By.xpath("//button[.=' Login']"));
+    }
+
+    public void login() {
+        openLogRegForm();
+        fillRegLogForm(new User().withEmail("Mon447233@mail.com").withPassword("Mon12$447233"));
+        clickLoginButton();
+    }
+
+    public boolean isLogined() {
+        return isElementPresent((By.xpath("//*[text()='Sign Out']")));
+
     }
 }

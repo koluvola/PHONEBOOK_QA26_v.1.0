@@ -25,4 +25,8 @@ public class HelperBase {
         return wd.findElements(locator).size()>0;
     }
 
+    public void pause(int milles) throws InterruptedException {
+        Thread.sleep(milles);
+
+    }
 }
