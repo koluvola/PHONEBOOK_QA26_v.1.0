@@ -1,0 +1,7 @@
+17:39:27.384 [Test worker] INFO  com.telran.tests.TestBase - Start test: registrationTest
+17:39:33.779 [Test worker] INFO  com.telran.tests.TestBase - Stop test: registrationTest
+17:39:33.783 [Test worker] INFO  com.telran.tests.TestBase - Start test: loginTest
+17:39:33.784 [Test worker] INFO  com.telran.tests.TestBase - Stop test: loginTest
+17:39:33.785 [Test worker] INFO  com.telran.tests.TestBase - Start test: addContactTestRest
+17:39:33.788 [Test worker] INFO  com.telran.tests.TestBase - Stop test: addContactTestRest
+17:39:33.789 [Test worker] INFO  com.telran.tests.TestBase - Stop test: addContactTestWeb

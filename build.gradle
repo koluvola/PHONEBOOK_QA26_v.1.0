@@ -37,7 +37,7 @@ task reg(type: Test){
         }*/
 
         else {
-            suites 'src/test/resources/testing.xml'
+            suites 'src/test/resources/testng.xml'
         }
     }
 
