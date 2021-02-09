@@ -1,0 +1,2 @@
+17:21:00.434 [Test worker] INFO  com.telran.tests.TestBase - Start test: loginTest
+17:21:03.728 [Test worker] INFO  com.telran.tests.TestBase - Stop test: loginTest

@@ -3,12 +3,13 @@
 <suite name="Suite1" verbose="1">
 
     <test name="Reg">
-        <!--<groups>
+
+        <groups>
             <run>
                 <include name="web"/>
                 <exclude name="rest"/>
             </run>
-        </groups>-->
+        </groups>
 
 
         <classes>

@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'ch.qos.logback:logback-classic:1.3.0-alpha5'
     implementation 'org.testng:testng:7.1.0'
    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
 }
@@ -24,14 +25,18 @@ task reg(type: Test){
 
         //suites 'src/test/resources/testng.xml'
         def suite =System.getProperty('suite','')
-        def groups=System.getProperty('groups');
+       /* def groups=System.getProperty('groups');
         if(groups!=null){
             includeGroups groups
-        }
+        }*/
         if(suite.equals('newtest')){
             suites 'src/test/resources/newtest.xml'
         }
-        else if(suite.equals('testing')){
+        /*else if(suite.equals('testing')){
+            suites 'src/test/resources/testing.xml'
+        }*/
+
+        else {
             suites 'src/test/resources/testing.xml'
         }
     }

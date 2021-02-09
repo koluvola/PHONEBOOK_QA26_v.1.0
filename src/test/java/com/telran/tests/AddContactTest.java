@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AddContactTest extends TestBase {
+    String pathToFile="src/test/screenSHots/screenShot-";
 
     @BeforeMethod(alwaysRun = true)
     public void ensurePrecondition() {
@@ -36,6 +37,8 @@ public class AddContactTest extends TestBase {
          .withEmail(email).withPhone(phone).withAddress(address).withDescription(desc));
         app.getContact().clickSaveBatton();
         app.getContact().delay(2000);
+        logger.info("Test passed....");
+        app.getUser().takeScreenShot(pathToFile);
         Assert.assertTrue(app.getContact().isNameExist(name));
     }
 
@@ -61,6 +64,8 @@ public class AddContactTest extends TestBase {
                 .withEmail(email).withPhone(phone).withAddress(address).withDescription(desc));
         app.getContact().clickSaveBatton();
         app.getContact().delay(2000);
+        logger.info("Test passed....");
+        app.getUser().takeScreenShot(pathToFile);
         Assert.assertTrue(app.getContact().isNameExist(name));
     }
 }

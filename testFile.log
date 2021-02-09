@@ -1,0 +1,6 @@
+16:43:41.489 [Test worker] INFO  com.telran.tests.TestBase - Start test: addContactTestRest
+16:44:02.594 [Test worker] INFO  com.telran.tests.TestBase - Test passed....
+16:44:02.649 [Test worker] INFO  com.telran.tests.TestBase - Stop test: addContactTestRest
+16:44:02.653 [Test worker] INFO  com.telran.tests.TestBase - Start test: addContactTestWeb
+16:44:26.578 [Test worker] INFO  com.telran.tests.TestBase - Test passed....
+16:44:26.617 [Test worker] INFO  com.telran.tests.TestBase - Stop test: addContactTestWeb

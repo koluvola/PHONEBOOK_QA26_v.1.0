@@ -1,0 +1,9 @@
+08:56:54.240 [Test worker] INFO  com.telran.tests.TestBase - Start test: addContactTestRest
+08:57:15.610 [Test worker] INFO  com.telran.tests.TestBase - Stop test: addContactTestRest
+08:57:15.612 [Test worker] INFO  com.telran.tests.TestBase - Start test: addContactTestWeb
+08:57:46.354 [Test worker] INFO  com.telran.tests.TestBase - Test passed....
+08:57:46.981 [Test worker] INFO  com.telran.tests.TestBase - Stop test: addContactTestWeb
+08:57:46.984 [Test worker] INFO  com.telran.tests.TestBase - Start test: loginTest
+08:57:46.985 [Test worker] INFO  com.telran.tests.TestBase - Stop test: loginTest
+08:57:46.986 [Test worker] INFO  com.telran.tests.TestBase - Start test: registrationTest
+08:57:46.987 [Test worker] INFO  com.telran.tests.TestBase - Stop test: registrationTest
