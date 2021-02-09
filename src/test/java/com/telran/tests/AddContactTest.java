@@ -15,7 +15,7 @@ public class AddContactTest extends TestBase {
         }
     }
 
-    @Test(groups = "rest")
+    @Test(enabled = false,groups = "rest")
     public void addContactTestRest() {
         app.getContact().clickContactButton();
         app.getContact().delay(1000);
@@ -42,7 +42,7 @@ public class AddContactTest extends TestBase {
         Assert.assertTrue(app.getContact().isNameExist(name));
     }
 
-    @Test (groups = {"web"})
+    @Test (enabled = false,groups = {"web"})
     public void addContactTestWeb() throws InterruptedException{
         app.getContact().clickContactButton();
         app.getContact().delay(1000);
